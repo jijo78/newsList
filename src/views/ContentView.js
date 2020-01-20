@@ -33,6 +33,7 @@ const ContentView = () => {
     const activeTab = e.currentTarget.dataset.section;
     setActiveTab(activeTab);
   };
+
   useEffect(() => {
     setIsLoading(true);
     getData(tab);

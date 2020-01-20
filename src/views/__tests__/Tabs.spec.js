@@ -34,7 +34,7 @@ describe('<Tabs />', () => {
     expect(tab).toBeDefined();
   });
 
-  it('should call onClick function if prop os present', () => {
+  it('should call onClick function if prop is present', () => {
     const { getByText } = render(<Tabs {...props} />);
     const tab = getByText(TAB_TEXT);
 

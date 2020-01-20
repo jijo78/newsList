@@ -2,7 +2,6 @@ import React from 'react';
 import { cleanup, render, fireEvent, waitForElement, wait } from '@testing-library/react';
 import { getResponse } from '../../utils';
 import { resultsTravel, resultsFootball, resultsUkNews } from './fixtures/data';
-console.log('resultsUkNews: ', resultsUkNews);
 
 import '@testing-library/jest-dom/extend-expect';
 import ContentView from '../ContentView';
@@ -46,7 +45,7 @@ describe('<ContentView />', () => {
     expect(resolvedtabList).toHaveLength(3);
   });
 
-  it('should render the proper section name if data', async () => {
+  it('should render the right section name if data', async () => {
     getResponse.mockResolvedValueOnce({
       data: {
         response: {
