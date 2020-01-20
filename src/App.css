@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #052962;
+}
+body {
+  padding: 2rem;
+  font-family: 'Guardian Text Egyptian Web', Georgia, serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-align: left;
+  font-weight: initial;
+  color: #052962;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+time {
+  display: block;
+}
+
+p,
+span {
+  margin: 0 0 0.3rem;
+  padding: 0;
+  text-align: left;
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #999;
+  padding: 0.5rem 0;
+}
+
+button {
+  background-color: #052962;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 0.3rem solid #052962;
+}
+
+.news-content {
+  max-width: 45rem;
+  margin: 0 auto;
+  color: #0d1b33;
+}
+
+.news-content__header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.news-content__list li {
+  color: #0d1b33;
+  border-bottom: 0.08rem solid #ddd;
+  padding: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  margin-left: 1rem;
+}
+
+.news-content__header-logo-img {
+  width: 16rem;
+}
+.news-content__tabs li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.news-content__tabs li button {
+  width: 15rem;
+  border-right: 0.1rem solid #fff;
+}
+
+.news-content__tabs li button:hover,
+.active-Football {
+  border-bottom: 0.3rem solid #00b2ff;
+}
+.Football a.news-content__title {
+  color: #0084c6;
+}
+.active-Travel {
+  border-bottom: 0.3rem solid #bb3a80;
+}
+
+.Travel a.news-content__title {
+  color: #bb3b80;
+}
+.active-UKnews {
+  border-bottom: 0.3rem solid #c70000;
+}
+.UKnews a.news-content__title,
+.UKnews a.news-content__title:hover {
+  color: #c70000;
+}
+.news-content__tabs ul,
+h2 {
+  margin-bottom: 0.8rem;
+}
+/*#0084c6 football, #bb3a80*/
