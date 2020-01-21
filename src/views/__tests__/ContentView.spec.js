@@ -11,21 +11,20 @@ jest.mock('../../utils');
 describe('<ContentView />', () => {
   afterEach(cleanup, jest.clearAllMocks());
 
-  it('should render loading spinner on load and data is not available', async () => {
+  it('should render loading spinner on load and data is not available yet', async () => {
     getResponse.mockResolvedValueOnce({
       data: {
         response: {}
       }
     });
 
-    const { getByText, getAllByTestId, container } = await render(<ContentView />);
-    console.log('container: ', container.innerHTML);
+    const { getByText } = await render(<ContentView />);
     const loading = getByText('Loading...');
     expect(loading).toHaveTextContent(/loading/i);
     expect(getResponse).toHaveBeenCalledTimes(1);
   });
 
-  it('should render tabs and lists of news on succesful data fetch', async () => {
+  it('should render tabs and lists of news on successful data fetch', async () => {
     getResponse.mockResolvedValueOnce({
       data: {
         response: {
@@ -45,7 +44,7 @@ describe('<ContentView />', () => {
     expect(resolvedtabList).toHaveLength(3);
   });
 
-  it('should render the right section name if data', async () => {
+  it('should render the right section name on successful data fetch', async () => {
     getResponse.mockResolvedValueOnce({
       data: {
         response: {
