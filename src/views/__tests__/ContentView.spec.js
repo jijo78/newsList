@@ -1,7 +1,7 @@
 import React from 'react';
-import { cleanup, render, fireEvent, waitForElement, wait } from '@testing-library/react';
+import { cleanup, render, waitForElement } from '@testing-library/react';
 import { getResponse } from '../../utils';
-import { resultsTravel, resultsFootball, resultsUkNews } from './fixtures/data';
+import { resultsTravel, resultsUkNews } from './fixtures/data';
 
 import '@testing-library/jest-dom/extend-expect';
 import ContentView from '../ContentView';
